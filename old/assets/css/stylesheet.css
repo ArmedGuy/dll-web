@@ -1,0 +1,126 @@
+html {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/bg.jpg);
+}
+body {
+  font-family: 'dejavu' !important;
+  color: #EEEEEE;
+  background-color: transparent;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'bebas_neueregular' !important;
+}
+p {
+  margin: 12px;
+}
+a {
+  color: #eeeeee;
+}
+a:hover {
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #0c0c0c;
+  border-bottom: 1px solid #202122;
+  z-index: 9002;
+  line-height: 80px;
+}
+#header-logo {
+  height: 42px;
+  width: auto;
+}
+header .link {
+  line-height: 80px;
+  margin: 0px;
+  padding: 0px;
+}
+#top {
+
+  margin-top: 150px;
+  text-align: center;
+}
+#logo {
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+}
+.year {
+  color: #eeeeee;
+  font-size: 38px;
+  margin-bottom: 0px;
+  font-family: 'bebas_neueregular' !important;
+}
+#content-frame, #content-frame-small {
+  position: absolute;
+  top: 800px;
+  left: 0px;
+  width: 100%;
+
+  background-color: #0c0c0c;
+  min-height: 700px;
+}
+#content-frame-small {
+  top: 450px;
+}
+.sponsors > div {
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+}
+.sponsors img {
+  max-width: 100%;
+}
+.site-header {
+  background-color: #86C808;
+  color: #202020;
+  min-height: 180px;
+  padding: 30px;
+  margin-bottom:20px;
+  text-align: center;
+}
+.inset-well {
+  background-color: #202122;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+.footer {
+  margin-top: 50px;
+  background-color: #202122;
+  min-height: 200px;
+  color:#202020;
+}
+.fancy-btn {
+  display: block;
+  margin: auto auto;
+  width: 300px;
+  font-size: 28px;
+  color: #eeeeee;
+  background-color: transparent;
+  font-family: 'dejavu_light' !important;
+  height: 80px;
+  line-height: 74px;
+  border: 3px solid #eeeeee;
+  text-align: center;
+  transition: 0.3s all;
+}
+.fancy-btn:hover {
+  text-decoration: none;
+  background-color: #eeeeee;
+  border: 3px solid #eeeeee;
+  color: #203B57;
+}
+.game-logos > div {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
+.game-logos img{
+  max-width: 100%;
+  max-height: 100%;
+}

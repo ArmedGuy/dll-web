@@ -1,0 +1,112 @@
+// Mixins
+
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url('../fonts/BebasNeue-webfont.eot');
+  src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/BebasNeue-webfont.woff') format('woff'),
+     url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+     url('../fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dejavu_bold';
+  src: url('../fonts/DejaVuSansCondensed-Bold-webfont.eot');
+  src: url('../fonts/DejaVuSansCondensed-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DejaVuSansCondensed-Bold-webfont.woff') format('woff'),
+  url('../fonts/DejaVuSansCondensed-Bold-webfont.ttf') format('truetype'),
+  url('../fonts/DejaVuSansCondensed-Bold-webfont.svg#dejavu_sanscondensed_bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dejavu_light';
+  src: url('../fonts/DejaVuSans-ExtraLight-webfont.eot');
+  src: url('../fonts/DejaVuSans-ExtraLight-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DejaVuSans-ExtraLight-webfont.woff') format('woff'),
+  url('../fonts/DejaVuSans-ExtraLight-webfont.ttf') format('truetype'),
+  url('../fonts/DejaVuSans-ExtraLight-webfont.svg#dejavu_sansextralight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dejavu';
+  src: url('../fonts/DejaVuSansCondensed-webfont.eot');
+  src: url('../fonts/DejaVuSansCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/DejaVuSansCondensed-webfont.woff') format('woff'),
+  url('../fonts/DejaVuSansCondensed-webfont.ttf') format('truetype'),
+  url('../fonts/DejaVuSansCondensed-webfont.svg#dejavu_sanscondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.transition-all() {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.background-cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.button-variant(@color; @background; @border) {
+	color: @color;
+	background-color: @background;
+	border-color: @border;
+	.transition-all;
+
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > .dropdown-toggle& {
+		color: @color;
+		background-color: darken(@background, 5%);
+	    border-color: darken(@border, 7%);
+	}
+	&:active,
+	&.active,
+	.open > .dropdown-toggle& {
+		background-image: none;
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+			background-color: @background;
+			border-color: @border;
+		}
+	}
+
+	.badge {
+		color: @background;
+		background-color: @color;
+	}
+}
+
+.sans-serif-font() {
+	font-family: 'bebas_neueregular', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.serif-font() {
+	font-family: 'dejavu', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
